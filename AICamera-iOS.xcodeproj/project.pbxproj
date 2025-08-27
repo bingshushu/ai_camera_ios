@@ -3,37 +3,64 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 56;
 	objects = {
 
-/* Begin PBXFileReference section */
-		A69B67592E5F181B00FF4CB6 /* AICamera-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AICamera-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
+/* Begin PBXBuildFile section */
+		2BF113FE5423589A43A5ECE3 /* Pods_AICamera_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED4195818CB04358F29552D /* Pods_AICamera_iOS.framework */; };
+		A69B676D2E5F18CD00FF4CB6 /* AICamera_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69B67692E5F18CD00FF4CB6 /* AICamera_iOSApp.swift */; };
+		A69B676E2E5F18CD00FF4CB6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69B676B2E5F18CD00FF4CB6 /* ContentView.swift */; };
+		A69B676F2E5F18CD00FF4CB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69B676A2E5F18CD00FF4CB6 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		A69B675B2E5F181B00FF4CB6 /* AICamera-iOS */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "AICamera-iOS";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
+/* Begin PBXFileReference section */
+		0E10E94DC4881807312B38E2 /* Pods-AICamera-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AICamera-iOS.debug.xcconfig"; path = "Target Support Files/Pods-AICamera-iOS/Pods-AICamera-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		1C02F5296C5B5EAE700961E3 /* Pods-AICamera-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AICamera-iOS.release.xcconfig"; path = "Target Support Files/Pods-AICamera-iOS/Pods-AICamera-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		A69B67592E5F181B00FF4CB6 /* AICamera-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AICamera-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A69B67682E5F18CD00FF4CB6 /* AICamera_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AICamera_iOS.entitlements; sourceTree = "<group>"; };
+		A69B67692E5F18CD00FF4CB6 /* AICamera_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AICamera_iOSApp.swift; sourceTree = "<group>"; };
+		A69B676A2E5F18CD00FF4CB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A69B676B2E5F18CD00FF4CB6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BED4195818CB04358F29552D /* Pods_AICamera_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AICamera_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A69B67562E5F181B00FF4CB6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BF113FE5423589A43A5ECE3 /* Pods_AICamera_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		551D497DB290ADA3258FD005 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BED4195818CB04358F29552D /* Pods_AICamera_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B10D5EB0097BF231E53418E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E10E94DC4881807312B38E2 /* Pods-AICamera-iOS.debug.xcconfig */,
+				1C02F5296C5B5EAE700961E3 /* Pods-AICamera-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A69B67502E5F181B00FF4CB6 = {
 			isa = PBXGroup;
 			children = (
-				A69B675B2E5F181B00FF4CB6 /* AICamera-iOS */,
+				A69B676C2E5F18CD00FF4CB6 /* AICamera-iOS */,
 				A69B675A2E5F181B00FF4CB6 /* Products */,
+				5B10D5EB0097BF231E53418E /* Pods */,
+				551D497DB290ADA3258FD005 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -45,6 +72,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		A69B676C2E5F18CD00FF4CB6 /* AICamera-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A69B67682E5F18CD00FF4CB6 /* AICamera_iOS.entitlements */,
+				A69B67692E5F18CD00FF4CB6 /* AICamera_iOSApp.swift */,
+				A69B676A2E5F18CD00FF4CB6 /* Assets.xcassets */,
+				A69B676B2E5F18CD00FF4CB6 /* ContentView.swift */,
+			);
+			path = "AICamera-iOS";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -52,6 +90,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A69B67652E5F181C00FF4CB6 /* Build configuration list for PBXNativeTarget "AICamera-iOS" */;
 			buildPhases = (
+				04C0EA7CE40DEF0DFB22DB1E /* [CP] Check Pods Manifest.lock */,
 				A69B67552E5F181B00FF4CB6 /* Sources */,
 				A69B67562E5F181B00FF4CB6 /* Frameworks */,
 				A69B67572E5F181B00FF4CB6 /* Resources */,
@@ -60,12 +99,7 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				A69B675B2E5F181B00FF4CB6 /* AICamera-iOS */,
-			);
 			name = "AICamera-iOS";
-			packageProductDependencies = (
-			);
 			productName = "AICamera-iOS";
 			productReference = A69B67592E5F181B00FF4CB6 /* AICamera-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -86,6 +120,7 @@
 				};
 			};
 			buildConfigurationList = A69B67542E5F181B00FF4CB6 /* Build configuration list for PBXProject "AICamera-iOS" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -93,8 +128,6 @@
 				Base,
 			);
 			mainGroup = A69B67502E5F181B00FF4CB6;
-			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = A69B675A2E5F181B00FF4CB6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -109,16 +142,44 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A69B676F2E5F18CD00FF4CB6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04C0EA7CE40DEF0DFB22DB1E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AICamera-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A69B67552E5F181B00FF4CB6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A69B676D2E5F18CD00FF4CB6 /* AICamera_iOSApp.swift in Sources */,
+				A69B676E2E5F18CD00FF4CB6 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +304,7 @@
 		};
 		A69B67662E5F181C00FF4CB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E10E94DC4881807312B38E2 /* Pods-AICamera-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -252,6 +314,7 @@
 				DEVELOPMENT_TEAM = 36J3V373H9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -282,6 +345,7 @@
 		};
 		A69B67672E5F181C00FF4CB6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C02F5296C5B5EAE700961E3 /* Pods-AICamera-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -291,6 +355,7 @@
 				DEVELOPMENT_TEAM = 36J3V373H9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
