@@ -6,5 +6,6 @@ target 'AICamera-iOS' do
   use_frameworks!
 
   # Pods for AICamera-iOS
+  pod 'onnxruntime-objc'
 
 end

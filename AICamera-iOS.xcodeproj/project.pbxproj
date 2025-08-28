@@ -8,19 +8,47 @@
 
 /* Begin PBXBuildFile section */
 		2BF113FE5423589A43A5ECE3 /* Pods_AICamera_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED4195818CB04358F29552D /* Pods_AICamera_iOS.framework */; };
+		A68F4D3B2E5FED60007F159F /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F4D392E5FED60007F159F /* AppConfig.swift */; };
+		A68F4D412E5FED9D007F159F /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F4D3F2E5FED9D007F159F /* UIImage+Extensions.swift */; };
+		A68F4D472E5FEDA3007F159F /* RTSPPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F4D452E5FEDA3007F159F /* RTSPPlayer.swift */; };
+		A68F4D482E5FEDA3007F159F /* OnnxCircleDetectorFallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F4D442E5FEDA3007F159F /* OnnxCircleDetectorFallback.swift */; };
+		A68F4D492E5FEDA3007F159F /* OnnxCircleDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F4D432E5FEDA3007F159F /* OnnxCircleDetector.swift */; };
+		A68F4D4A2E5FEDA3007F159F /* DetectorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F4D422E5FEDA3007F159F /* DetectorProtocol.swift */; };
+		A68F4D4E2E5FEDA6007F159F /* ScreenshotCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F4D4C2E5FEDA6007F159F /* ScreenshotCapture.swift */; };
+		A68F4D4F2E5FEDA6007F159F /* ModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F4D4B2E5FEDA6007F159F /* ModelValidator.swift */; };
+		A68F4D542E5FEDAB007F159F /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F4D502E5FEDAB007F159F /* ControlsView.swift */; };
+		A68F4D552E5FEDAB007F159F /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F4D512E5FEDAB007F159F /* OverlayView.swift */; };
+		A68F4D562E5FEDAB007F159F /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F4D522E5FEDAB007F159F /* VideoPlayerView.swift */; };
 		A69B676D2E5F18CD00FF4CB6 /* AICamera_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69B67692E5F18CD00FF4CB6 /* AICamera_iOSApp.swift */; };
 		A69B676E2E5F18CD00FF4CB6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69B676B2E5F18CD00FF4CB6 /* ContentView.swift */; };
 		A69B676F2E5F18CD00FF4CB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69B676A2E5F18CD00FF4CB6 /* Assets.xcassets */; };
+		A6C177AD2E60287A0003D2A7 /* model.onnx in Resources */ = {isa = PBXBuildFile; fileRef = A6C177AC2E60287A0003D2A7 /* model.onnx */; };
+		A6C177B12E602A090003D2A7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A6C177B02E602A090003D2A7 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0E10E94DC4881807312B38E2 /* Pods-AICamera-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AICamera-iOS.debug.xcconfig"; path = "Target Support Files/Pods-AICamera-iOS/Pods-AICamera-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		1C02F5296C5B5EAE700961E3 /* Pods-AICamera-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AICamera-iOS.release.xcconfig"; path = "Target Support Files/Pods-AICamera-iOS/Pods-AICamera-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		A68F4D392E5FED60007F159F /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		A68F4D3F2E5FED9D007F159F /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		A68F4D422E5FEDA3007F159F /* DetectorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectorProtocol.swift; sourceTree = "<group>"; };
+		A68F4D432E5FEDA3007F159F /* OnnxCircleDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnnxCircleDetector.swift; sourceTree = "<group>"; };
+		A68F4D442E5FEDA3007F159F /* OnnxCircleDetectorFallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnnxCircleDetectorFallback.swift; sourceTree = "<group>"; };
+		A68F4D452E5FEDA3007F159F /* RTSPPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTSPPlayer.swift; sourceTree = "<group>"; };
+		A68F4D4B2E5FEDA6007F159F /* ModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelValidator.swift; sourceTree = "<group>"; };
+		A68F4D4C2E5FEDA6007F159F /* ScreenshotCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotCapture.swift; sourceTree = "<group>"; };
+		A68F4D502E5FEDAB007F159F /* ControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
+		A68F4D512E5FEDAB007F159F /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		A68F4D522E5FEDAB007F159F /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		A69B67592E5F181B00FF4CB6 /* AICamera-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AICamera-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69B67682E5F18CD00FF4CB6 /* AICamera_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AICamera_iOS.entitlements; sourceTree = "<group>"; };
 		A69B67692E5F18CD00FF4CB6 /* AICamera_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AICamera_iOSApp.swift; sourceTree = "<group>"; };
 		A69B676A2E5F18CD00FF4CB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A69B676B2E5F18CD00FF4CB6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A6C177A82E6023850003D2A7 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		A6C177AC2E60287A0003D2A7 /* model.onnx */ = {isa = PBXFileReference; lastKnownFileType = file; path = model.onnx; sourceTree = "<group>"; };
+		A6C177AE2E602A000003D2A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6C177B02E602A090003D2A7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BED4195818CB04358F29552D /* Pods_AICamera_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AICamera_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -50,13 +78,59 @@
 				0E10E94DC4881807312B38E2 /* Pods-AICamera-iOS.debug.xcconfig */,
 				1C02F5296C5B5EAE700961E3 /* Pods-AICamera-iOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A68F4D3A2E5FED60007F159F /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				A68F4D392E5FED60007F159F /* AppConfig.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		A68F4D402E5FED9D007F159F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A68F4D3F2E5FED9D007F159F /* UIImage+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A68F4D462E5FEDA3007F159F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A68F4D422E5FEDA3007F159F /* DetectorProtocol.swift */,
+				A68F4D432E5FEDA3007F159F /* OnnxCircleDetector.swift */,
+				A68F4D442E5FEDA3007F159F /* OnnxCircleDetectorFallback.swift */,
+				A68F4D452E5FEDA3007F159F /* RTSPPlayer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A68F4D4D2E5FEDA6007F159F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A68F4D4B2E5FEDA6007F159F /* ModelValidator.swift */,
+				A68F4D4C2E5FEDA6007F159F /* ScreenshotCapture.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A68F4D532E5FEDAB007F159F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A68F4D502E5FEDAB007F159F /* ControlsView.swift */,
+				A68F4D512E5FEDAB007F159F /* OverlayView.swift */,
+				A68F4D522E5FEDAB007F159F /* VideoPlayerView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		A69B67502E5F181B00FF4CB6 = {
 			isa = PBXGroup;
 			children = (
+				A6C177A82E6023850003D2A7 /* Package.swift */,
 				A69B676C2E5F18CD00FF4CB6 /* AICamera-iOS */,
 				A69B675A2E5F181B00FF4CB6 /* Products */,
 				5B10D5EB0097BF231E53418E /* Pods */,
@@ -75,10 +149,18 @@
 		A69B676C2E5F18CD00FF4CB6 /* AICamera-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				A68F4D3A2E5FED60007F159F /* Configuration */,
+				A68F4D532E5FEDAB007F159F /* Views */,
+				A68F4D4D2E5FEDA6007F159F /* Utils */,
+				A68F4D462E5FEDA3007F159F /* Models */,
+				A68F4D402E5FED9D007F159F /* Extensions */,
 				A69B67682E5F18CD00FF4CB6 /* AICamera_iOS.entitlements */,
 				A69B67692E5F18CD00FF4CB6 /* AICamera_iOSApp.swift */,
 				A69B676A2E5F18CD00FF4CB6 /* Assets.xcassets */,
+				A6C177AE2E602A000003D2A7 /* Info.plist */,
+				A6C177AC2E60287A0003D2A7 /* model.onnx */,
 				A69B676B2E5F18CD00FF4CB6 /* ContentView.swift */,
+				A6C177B02E602A090003D2A7 /* README.md */,
 			);
 			path = "AICamera-iOS";
 			sourceTree = "<group>";
@@ -142,7 +224,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6C177AD2E60287A0003D2A7 /* model.onnx in Resources */,
 				A69B676F2E5F18CD00FF4CB6 /* Assets.xcassets in Resources */,
+				A6C177B12E602A090003D2A7 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,8 +262,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A68F4D3B2E5FED60007F159F /* AppConfig.swift in Sources */,
 				A69B676D2E5F18CD00FF4CB6 /* AICamera_iOSApp.swift in Sources */,
 				A69B676E2E5F18CD00FF4CB6 /* ContentView.swift in Sources */,
+				A68F4D472E5FEDA3007F159F /* RTSPPlayer.swift in Sources */,
+				A68F4D482E5FEDA3007F159F /* OnnxCircleDetectorFallback.swift in Sources */,
+				A68F4D542E5FEDAB007F159F /* ControlsView.swift in Sources */,
+				A68F4D552E5FEDAB007F159F /* OverlayView.swift in Sources */,
+				A68F4D562E5FEDAB007F159F /* VideoPlayerView.swift in Sources */,
+				A68F4D492E5FEDA3007F159F /* OnnxCircleDetector.swift in Sources */,
+				A68F4D4A2E5FEDA3007F159F /* DetectorProtocol.swift in Sources */,
+				A68F4D4E2E5FEDA6007F159F /* ScreenshotCapture.swift in Sources */,
+				A68F4D4F2E5FEDA6007F159F /* ModelValidator.swift in Sources */,
+				A68F4D412E5FED9D007F159F /* UIImage+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +410,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "AICamera-iOS/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -335,10 +431,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 2.4;
 			};
 			name = Debug;
@@ -356,7 +453,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "AICamera-iOS/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -376,10 +474,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 2.4;
 			};
 			name = Release;

@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xcodebuild clean:*)",
+      "Bash(xcodebuild build:*)",
+      "Bash(pod install:*)",
+      "Bash(swiftc:*)",
+      "Bash(xcodebuild:*)",
+      "Bash(/usr/libexec/PlistBuddy:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
