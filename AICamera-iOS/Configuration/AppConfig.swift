@@ -2,7 +2,7 @@ import Foundation
 
 struct AppConfig {
     // RTSP Configuration
-    static let rtspURL = "rtsp://192.168.1.88/11"
+    static let rtspURL = "rtsp://192.168.1.87/11"
     static let rtspUsername = "admin"
     static let rtspPassword = "admin"
     

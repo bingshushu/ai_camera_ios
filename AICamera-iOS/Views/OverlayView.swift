@@ -90,6 +90,7 @@ struct CircleOverlayView: View {
     let imageSize: CGSize
     let scale: CGFloat
     let offset: CGSize
+    let centerStyle: CircleCenterStyle
     
     var body: some View {
         GeometryReader { geometry in
@@ -108,9 +109,6 @@ struct CircleOverlayView: View {
                     
                     // Adjust stroke width based on scale
                     let strokeWidth = 24.0 / scale
-                    let centerRadius = 6.0 / scale
-                    let crossSize = 15.0 / scale
-                    let crossStrokeWidth = 3.0 / scale
                     
                     // Draw outer circle
                     context.stroke(
@@ -124,36 +122,14 @@ struct CircleOverlayView: View {
                         lineWidth: strokeWidth
                     )
                     
-                    // Draw center point
-                    context.fill(
-                        Path(ellipseIn: CGRect(
-                            x: center.x - centerRadius,
-                            y: center.y - centerRadius,
-                            width: centerRadius * 2,
-                            height: centerRadius * 2
-                        )),
-                        with: .color(color)
-                    )
-                    
-                    // Draw crosshair
-                    // Horizontal line
-                    context.stroke(
-                        Path { path in
-                            path.move(to: CGPoint(x: center.x - crossSize, y: center.y))
-                            path.addLine(to: CGPoint(x: center.x + crossSize, y: center.y))
-                        },
-                        with: .color(color),
-                        lineWidth: crossStrokeWidth
-                    )
-                    
-                    // Vertical line
-                    context.stroke(
-                        Path { path in
-                            path.move(to: CGPoint(x: center.x, y: center.y - crossSize))
-                            path.addLine(to: CGPoint(x: center.x, y: center.y + crossSize))
-                        },
-                        with: .color(color),
-                        lineWidth: crossStrokeWidth
+                    // Draw center style using the settings
+                    centerStyle.draw(
+                        in: context,
+                        center: center,
+                        color: color,
+                        scale: 1.0 / scale, // Inverse scale to maintain consistent size
+                        circleRadius: radius,
+                        isPreview: false
                     )
                 }
             }

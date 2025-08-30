@@ -14,9 +14,9 @@ class RTSPPlayer: ObservableObject {
     private var timeObserver: Any?
     
     // RTSP Configuration
-    private let defaultRTSPURL = "rtsp://192.168.1.88/11"
-    private let defaultUsername = "admin"
-    private let defaultPassword = "admin"
+    private let defaultRTSPURL = AppConfig.rtspURL
+    private let defaultUsername = AppConfig.rtspUsername
+    private let defaultPassword = AppConfig.rtspPassword
     
     init() {
         setupPlayer()

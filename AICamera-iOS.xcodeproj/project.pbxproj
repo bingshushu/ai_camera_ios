@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2BF113FE5423589A43A5ECE3 /* Pods_AICamera_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED4195818CB04358F29552D /* Pods_AICamera_iOS.framework */; };
+		A6290BE62E6199FF0080827F /* model.onnx in Resources */ = {isa = PBXBuildFile; fileRef = A6290BE52E6199FF0080827F /* model.onnx */; };
+		A6290BE82E619A840080827F /* ModelUpdateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6290BE72E619A840080827F /* ModelUpdateManager.swift */; };
+		A6290BEA2E619A8A0080827F /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6290BE92E619A8A0080827F /* SettingsManager.swift */; };
+		A6290BEC2E619A980080827F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6290BEB2E619A980080827F /* SettingsView.swift */; };
+		A6290BEE2E619C5D0080827F /* RTSPDiagnostics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6290BED2E619C5D0080827F /* RTSPDiagnostics.swift */; };
 		A68F4D3B2E5FED60007F159F /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F4D392E5FED60007F159F /* AppConfig.swift */; };
 		A68F4D412E5FED9D007F159F /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F4D3F2E5FED9D007F159F /* UIImage+Extensions.swift */; };
 		A68F4D472E5FEDA3007F159F /* RTSPPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F4D452E5FEDA3007F159F /* RTSPPlayer.swift */; };
@@ -19,16 +24,25 @@
 		A68F4D542E5FEDAB007F159F /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F4D502E5FEDAB007F159F /* ControlsView.swift */; };
 		A68F4D552E5FEDAB007F159F /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F4D512E5FEDAB007F159F /* OverlayView.swift */; };
 		A68F4D562E5FEDAB007F159F /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F4D522E5FEDAB007F159F /* VideoPlayerView.swift */; };
+		A68F4D572E5FEDB1007F159F /* VLCRTSPPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F4D582E5FEDB1007F159F /* VLCRTSPPlayer.swift */; };
+		A68F4D592E5FEDB2007F159F /* VLCVideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F4D5A2E5FEDB2007F159F /* VLCVideoPlayerView.swift */; };
 		A69B676D2E5F18CD00FF4CB6 /* AICamera_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69B67692E5F18CD00FF4CB6 /* AICamera_iOSApp.swift */; };
 		A69B676E2E5F18CD00FF4CB6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69B676B2E5F18CD00FF4CB6 /* ContentView.swift */; };
 		A69B676F2E5F18CD00FF4CB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69B676A2E5F18CD00FF4CB6 /* Assets.xcassets */; };
-		A6C177AD2E60287A0003D2A7 /* model.onnx in Resources */ = {isa = PBXBuildFile; fileRef = A6C177AC2E60287A0003D2A7 /* model.onnx */; };
+		A6B00DFE2E61A19300E95C92 /* AVVideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B00DFD2E61A19300E95C92 /* AVVideoPlayerView.swift */; };
+		A6B00E002E61A3B700E95C92 /* AVRTSPPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B00DFF2E61A3B700E95C92 /* AVRTSPPlayer.swift */; };
+		A6B00E022E61A4C100E95C92 /* SmartRTSPPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B00E012E61A4C100E95C92 /* SmartRTSPPlayer.swift */; };
 		A6C177B12E602A090003D2A7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A6C177B02E602A090003D2A7 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0E10E94DC4881807312B38E2 /* Pods-AICamera-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AICamera-iOS.debug.xcconfig"; path = "Target Support Files/Pods-AICamera-iOS/Pods-AICamera-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		1C02F5296C5B5EAE700961E3 /* Pods-AICamera-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AICamera-iOS.release.xcconfig"; path = "Target Support Files/Pods-AICamera-iOS/Pods-AICamera-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		A6290BE52E6199FF0080827F /* model.onnx */ = {isa = PBXFileReference; lastKnownFileType = file; path = model.onnx; sourceTree = "<group>"; };
+		A6290BE72E619A840080827F /* ModelUpdateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelUpdateManager.swift; sourceTree = "<group>"; };
+		A6290BE92E619A8A0080827F /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+		A6290BEB2E619A980080827F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A6290BED2E619C5D0080827F /* RTSPDiagnostics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTSPDiagnostics.swift; sourceTree = "<group>"; };
 		A68F4D392E5FED60007F159F /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		A68F4D3F2E5FED9D007F159F /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		A68F4D422E5FEDA3007F159F /* DetectorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectorProtocol.swift; sourceTree = "<group>"; };
@@ -40,13 +54,17 @@
 		A68F4D502E5FEDAB007F159F /* ControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
 		A68F4D512E5FEDAB007F159F /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 		A68F4D522E5FEDAB007F159F /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		A68F4D582E5FEDB1007F159F /* VLCRTSPPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLCRTSPPlayer.swift; sourceTree = "<group>"; };
+		A68F4D5A2E5FEDB2007F159F /* VLCVideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLCVideoPlayerView.swift; sourceTree = "<group>"; };
 		A69B67592E5F181B00FF4CB6 /* AICamera-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AICamera-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69B67682E5F18CD00FF4CB6 /* AICamera_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AICamera_iOS.entitlements; sourceTree = "<group>"; };
 		A69B67692E5F18CD00FF4CB6 /* AICamera_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AICamera_iOSApp.swift; sourceTree = "<group>"; };
 		A69B676A2E5F18CD00FF4CB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A69B676B2E5F18CD00FF4CB6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A6B00DFD2E61A19300E95C92 /* AVVideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVVideoPlayerView.swift; sourceTree = "<group>"; };
+		A6B00DFF2E61A3B700E95C92 /* AVRTSPPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVRTSPPlayer.swift; sourceTree = "<group>"; };
+		A6B00E012E61A4C100E95C92 /* SmartRTSPPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartRTSPPlayer.swift; sourceTree = "<group>"; };
 		A6C177A82E6023850003D2A7 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		A6C177AC2E60287A0003D2A7 /* model.onnx */ = {isa = PBXFileReference; lastKnownFileType = file; path = model.onnx; sourceTree = "<group>"; };
 		A6C177AE2E602A000003D2A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6C177B02E602A090003D2A7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BED4195818CB04358F29552D /* Pods_AICamera_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AICamera_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,10 +118,15 @@
 		A68F4D462E5FEDA3007F159F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A6B00E012E61A4C100E95C92 /* SmartRTSPPlayer.swift */,
+				A6B00DFF2E61A3B700E95C92 /* AVRTSPPlayer.swift */,
 				A68F4D422E5FEDA3007F159F /* DetectorProtocol.swift */,
+				A6290BE72E619A840080827F /* ModelUpdateManager.swift */,
 				A68F4D432E5FEDA3007F159F /* OnnxCircleDetector.swift */,
 				A68F4D442E5FEDA3007F159F /* OnnxCircleDetectorFallback.swift */,
 				A68F4D452E5FEDA3007F159F /* RTSPPlayer.swift */,
+				A6290BE92E619A8A0080827F /* SettingsManager.swift */,
+				A68F4D582E5FEDB1007F159F /* VLCRTSPPlayer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -111,6 +134,7 @@
 		A68F4D4D2E5FEDA6007F159F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				A6290BED2E619C5D0080827F /* RTSPDiagnostics.swift */,
 				A68F4D4B2E5FEDA6007F159F /* ModelValidator.swift */,
 				A68F4D4C2E5FEDA6007F159F /* ScreenshotCapture.swift */,
 			);
@@ -120,9 +144,12 @@
 		A68F4D532E5FEDAB007F159F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A6B00DFD2E61A19300E95C92 /* AVVideoPlayerView.swift */,
 				A68F4D502E5FEDAB007F159F /* ControlsView.swift */,
 				A68F4D512E5FEDAB007F159F /* OverlayView.swift */,
+				A6290BEB2E619A980080827F /* SettingsView.swift */,
 				A68F4D522E5FEDAB007F159F /* VideoPlayerView.swift */,
+				A68F4D5A2E5FEDB2007F159F /* VLCVideoPlayerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -157,8 +184,8 @@
 				A69B67682E5F18CD00FF4CB6 /* AICamera_iOS.entitlements */,
 				A69B67692E5F18CD00FF4CB6 /* AICamera_iOSApp.swift */,
 				A69B676A2E5F18CD00FF4CB6 /* Assets.xcassets */,
+				A6290BE52E6199FF0080827F /* model.onnx */,
 				A6C177AE2E602A000003D2A7 /* Info.plist */,
-				A6C177AC2E60287A0003D2A7 /* model.onnx */,
 				A69B676B2E5F18CD00FF4CB6 /* ContentView.swift */,
 				A6C177B02E602A090003D2A7 /* README.md */,
 			);
@@ -176,6 +203,7 @@
 				A69B67552E5F181B00FF4CB6 /* Sources */,
 				A69B67562E5F181B00FF4CB6 /* Frameworks */,
 				A69B67572E5F181B00FF4CB6 /* Resources */,
+				4DD03A503DAE2F48CD3A9557 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -224,7 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6C177AD2E60287A0003D2A7 /* model.onnx in Resources */,
+				A6290BE62E6199FF0080827F /* model.onnx in Resources */,
 				A69B676F2E5F18CD00FF4CB6 /* Assets.xcassets in Resources */,
 				A6C177B12E602A090003D2A7 /* README.md in Resources */,
 			);
@@ -255,6 +283,27 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4DD03A503DAE2F48CD3A9557 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AICamera-iOS/Pods-AICamera-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AICamera-iOS/Pods-AICamera-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AICamera-iOS/Pods-AICamera-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -262,19 +311,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6290BEE2E619C5D0080827F /* RTSPDiagnostics.swift in Sources */,
 				A68F4D3B2E5FED60007F159F /* AppConfig.swift in Sources */,
 				A69B676D2E5F18CD00FF4CB6 /* AICamera_iOSApp.swift in Sources */,
+				A6290BE82E619A840080827F /* ModelUpdateManager.swift in Sources */,
+				A6290BEC2E619A980080827F /* SettingsView.swift in Sources */,
 				A69B676E2E5F18CD00FF4CB6 /* ContentView.swift in Sources */,
 				A68F4D472E5FEDA3007F159F /* RTSPPlayer.swift in Sources */,
+				A6B00E022E61A4C100E95C92 /* SmartRTSPPlayer.swift in Sources */,
 				A68F4D482E5FEDA3007F159F /* OnnxCircleDetectorFallback.swift in Sources */,
 				A68F4D542E5FEDAB007F159F /* ControlsView.swift in Sources */,
 				A68F4D552E5FEDAB007F159F /* OverlayView.swift in Sources */,
 				A68F4D562E5FEDAB007F159F /* VideoPlayerView.swift in Sources */,
+				A6290BEA2E619A8A0080827F /* SettingsManager.swift in Sources */,
+				A6B00DFE2E61A19300E95C92 /* AVVideoPlayerView.swift in Sources */,
+				A68F4D572E5FEDB1007F159F /* VLCRTSPPlayer.swift in Sources */,
+				A68F4D592E5FEDB2007F159F /* VLCVideoPlayerView.swift in Sources */,
 				A68F4D492E5FEDA3007F159F /* OnnxCircleDetector.swift in Sources */,
 				A68F4D4A2E5FEDA3007F159F /* DetectorProtocol.swift in Sources */,
 				A68F4D4E2E5FEDA6007F159F /* ScreenshotCapture.swift in Sources */,
 				A68F4D4F2E5FEDA6007F159F /* ModelValidator.swift in Sources */,
 				A68F4D412E5FED9D007F159F /* UIImage+Extensions.swift in Sources */,
+				A6B00E002E61A3B700E95C92 /* AVRTSPPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,5 +7,6 @@ target 'AICamera-iOS' do
 
   # Pods for AICamera-iOS
   pod 'onnxruntime-objc'
+  pod 'MobileVLCKit', '~> 3.6.0'
 
 end

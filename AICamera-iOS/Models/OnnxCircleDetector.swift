@@ -29,6 +29,7 @@ private struct LetterboxResult {
 class OnnxCircleDetector: ObservableObject {
     private var session: ORTSession?
     private let environment: ORTEnv
+    private let modelUpdateManager: ModelUpdateManager?
     
     // Model configuration
     private var modelInputSize = 320
@@ -36,7 +37,8 @@ class OnnxCircleDetector: ObservableObject {
     private let nmsThreshold: Float = 0.48
     private let classNames = ["ROI", "RedCenter"]
     
-    init() {
+    init(modelUpdateManager: ModelUpdateManager? = nil) {
+        self.modelUpdateManager = modelUpdateManager
         environment = (try? ORTEnv(loggingLevel: .warning)) ?? (try! ORTEnv(loggingLevel: .warning))
         do {
             try loadModel()
@@ -50,8 +52,19 @@ class OnnxCircleDetector: ObservableObject {
     }
     
     private func loadModel() throws {
-        guard let modelPath = Bundle.main.path(forResource: "model", ofType: "onnx") else {
-            throw NSError(domain: "OnnxCircleDetector", code: 1, userInfo: [NSLocalizedDescriptionKey: "Model file not found: model.onnx"])
+        var modelPath: String
+        
+        // Check if we have a downloaded model
+        if let updateManager = modelUpdateManager, updateManager.hasDownloadedModel() {
+            modelPath = updateManager.getModelFilePath()
+            print("Using downloaded model: \(modelPath)")
+        } else {
+            // Use bundled model
+            guard let bundledModelPath = Bundle.main.path(forResource: "model", ofType: "onnx") else {
+                throw NSError(domain: "OnnxCircleDetector", code: 1, userInfo: [NSLocalizedDescriptionKey: "Model file not found: model.onnx"])
+            }
+            modelPath = bundledModelPath
+            print("Using bundled model: \(modelPath)")
         }
         
         let options = try ORTSessionOptions()
@@ -81,6 +94,12 @@ class OnnxCircleDetector: ObservableObject {
         } catch {
             print("Failed to log model info: \(error)")
         }
+    }
+    
+    func reloadModel() throws {
+        session = nil
+        try loadModel()
+        print("Model reloaded successfully")
     }
     
     func detect(image: UIImage) -> [Circle] {
